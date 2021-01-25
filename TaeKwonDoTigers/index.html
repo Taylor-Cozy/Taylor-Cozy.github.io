@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/slideshow.css" />
+    <title>TaeKwonDo Tigers</title>
+</head>
+<body id="top">
+    <div>
+        <header>
+            <nav>
+                <h1 class="left title">NORTH EAST<br>TAEKWONDO TIGERS</h1>
+                <img src="./img/Logos/SVG/logo_transparent.svg" alt="TKD Tigers Logo">
+                <h1 class="right title">STAY ACTIVE<br>DEFEND YOURSELF</h1>
+            </nav>
+        </header>
+        <div class="slideshow" >
+            <div class= "blurContainer" style="overflow: hidden;"><div class="blur"></div></div>
+            <div class="image-container">
+                <div class="mySlides fade">
+                    <img id="photo1" src="./img/gallery/gallery_1.jpg" alt="Class Photo">
+                </div>
+                <div class="mySlides fade">
+                    <img id="photo2" src="./img/gallery/gallery_2.jpg" alt="Class Photo">
+                </div>
+                <div class="mySlides fade">
+                    <img id="photo3" src="./img/gallery/gallery_3.jpg" alt="Class Photo">
+                </div>
+                <div class="mySlides fade">
+                    <img id="photo4" src="./img/gallery/gallery_4.jpg" alt="Class Photo">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="background">
+            <main>
+                <section class="tkdInfo">
+                    <h1 class="whatTKD">WHAT IS TAEKWONDO?</h1>
+                    <div class="whatTKDcontent">
+                        <p>
+                            Taekwondo is a Korean martial art form that translates to "The Way of the Foot and Fist".
+                            It primarily focuses on striking techniques such as punching and kicking, with an emphasis
+                            on speed, flexibility, and control. It is one of the most popular martial art forms in the
+                            world - with over 70 million practitioners worldwide - and has been an olympic sport since
+                            2000.
+                            
+                            Although the modern form of Taekwondo was not founded until 1955, the roots of Taekwondo can
+                            be found in various Korean martial art forms stretching back over 2000 years.
+                        </p>
+                        <img src="./img/Logos/SVG/TKD_Hangul.svg" alt="Hangul for Taekwondo">
+                    </div>
+                    <div class="whyTKD">
+                        <div class="whyTKDimage">
+                            <img class = "guyKicking" src="./img/guy.png" alt="kick">
+                            <span class="dot"></span>
+                        </div>
+                        <div class="whyTKDcontent">
+                            <h1>WHY STUDY TAEKWONDO?</h1>
+                            <p>
+                                There are many benefits to studying Taekwondo, whether you simply want to stay fit, become more
+                                flexible, or learn to defend yourself. Some other benefits include:
+                            </p>
+                            <ul>
+                                <li>Improved strength and blance</li>
+                                <li>Improved stamina</li>
+                                <li>Improved confidence and self-esteem</li>
+                                <li>Improved agility and reflexes</li>
+                                <li>Improved concentration and focus</li>
+                                <li>Greater self-discipline</li>
+                                <li>Reduced stress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="interested">
+                        <h1>INTERESTED?</h1>
+                        <p>
+                            If you'd like to find out more about our club, instructor, class times, or how to join us, then
+                            simply click the button below to visit our About page.
+                        </p>
+                        <a href="https://youtube.com"><button class="buttonAbout"><span>ABOUT</span></button></a>
+                        <p>
+                            or you can contact us by visiting our social media pages below.
+                        </p>
+                        <div class="socials">
+                            <a href="https://www.facebook.com/tkd.tigers.9"><img src="./img/logos/SOCIALS/Facebook.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/northeast_tkd_tigers/"><img src="./img/logos/SOCIALS/Instagram.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/NE_tkdTigers"><img src="./img/logos/SOCIALS/Twitter.png" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <a href=#top class="backtotop"><p>▲ BACK TO TOP ▲</p></a>
+                <p class="copyright">© 2021 Taylor Hetherington</p>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/slideshow.js"></script>
+</body>
+</html>

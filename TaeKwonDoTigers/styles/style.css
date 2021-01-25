@@ -1,0 +1,244 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+@font-face {
+    font-family: OSExtraBold;
+    src: url("../fonts/OpenSans-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+h1{
+    font-family: OSExtraBold;
+    font-size: 36px;
+    color: #2b2b2b;
+}
+
+p, li{
+    font-family: Raleway;
+    font-size: 22px;
+    color: #2b2b2b;
+}
+
+.background{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    z-index: 10;
+    box-shadow: 0 0 5px 50px #000000;
+    box-shadow: 0 0 20px 50px #000000;
+}
+
+main{
+    background-color: #f6f6f6;
+    width: 75vw;
+    margin: auto;
+}
+
+nav{
+    background-color: #f6f6f6;
+    height: 12vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0 20px 5px #000000;
+}
+
+.title{
+    width: 40%;
+}
+
+nav h1{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.left{
+    text-align: right;
+    line-height: 100%;
+    min-width: 100%;
+
+}
+.right{
+    line-height: 100%;
+    min-width: 100%;
+
+}
+
+nav img{
+    display: inline-block;
+    width: auto;
+    height: 90%;
+}
+
+.tkdInfo{
+    padding: 25px;
+    padding-top: 50px;
+    box-shadow: 0 0 20px -10px #000000;
+}
+
+.whatTKDcontent{
+    display: flex;
+}
+
+.whatTKDcontent p{
+    width: 60%;
+    justify-self: left;
+}
+
+.whatTKDcontent img{
+    margin: auto;
+    width: 30%;
+}
+
+.whyTKD{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+}
+
+.whyTKDimage{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.dot{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    position: absolute;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px; 
+}
+
+.guyKicking{
+    position:absolute;
+    max-height: 300px;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
+.whyTKDcontent{
+    width: 60%;
+}
+
+.whyTKDcontent li{
+    margin-left: 25px;
+    margin-bottom: 3px;
+}
+
+.whyTKDcontent p{
+    margin-bottom: 15px;
+}
+
+.interested {
+    padding-top: 30px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    font-family: OSExtraBold;
+    font-size: 36px;
+    color: #2b2b2b;
+}
+
+.buttonAbout {
+    margin: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+    width: 280px;
+    height: 75px;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    box-shadow: 0 5px 5px;
+    box-shadow: 0 5px 20px;
+    cursor: pointer;
+}
+
+.buttonAbout span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonAbout span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonAbout:hover span{
+    padding-right: 25px;
+}
+
+.buttonAbout:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.buttonAbout:active{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 50%, #e3eeff 100%);
+    box-shadow: none;
+}
+
+.socials {
+    margin: auto;
+    justify-content: center;
+    margin-top: 25px;
+    display: flex;
+    width: 80%;
+}
+
+.socials img{
+    height: 80px;
+}
+
+.socials a {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backtotop{
+    text-decoration: none;
+}
+
+.backtotop p{
+    margin: 10px;
+    font-family: OSExtraBold;
+    font-size: 36px;
+}
+
+.copyright {
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
