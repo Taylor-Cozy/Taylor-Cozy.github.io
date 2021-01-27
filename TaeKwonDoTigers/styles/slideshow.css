@@ -30,7 +30,7 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 750px){
     .blurContainer, .blur{
         display: none;
     }
@@ -38,6 +38,7 @@
     .image-container{
         max-width: 100%;
         height: fit-content;
+        max-height: 500px;
     }
 }
 
