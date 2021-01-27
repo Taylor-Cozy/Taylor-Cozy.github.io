@@ -18,6 +18,7 @@ h1{
     font-family: OSExtraBold;
     font-size: 36px;
     color: #2b2b2b;
+    padding-bottom: 20px;
 }
 
 p, li{
@@ -39,6 +40,11 @@ main{
     margin: auto;
 }
 
+.desktop{
+    width: 100%;
+    height: 12vh;
+}
+
 nav{
     background-color: #f6f6f6;
     height: 12vh;
@@ -47,7 +53,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 400px;
+    /* min-width: 400px; */
     position: fixed;
     z-index: 1000;
     box-shadow: 0 0 20px 5px #000000;
@@ -72,7 +78,6 @@ nav h1{
 .right{
     line-height: 100%;
     min-width: 100%;
-
 }
 
 nav img{
@@ -105,33 +110,23 @@ nav img{
     margin-top: 80px;
     display: flex;
     justify-content: flex-end;
-    height: 400px;
 }
 
 .whyTKDimage{
     width: 40%;
-    display: flex;
-    justify-content: center;
 }
 
-.dot{
-    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    position: absolute;
-    border-radius: 50%;
-    width: 350px;
-    height: 350px; 
+.whyTKDimage img {
+    max-height: 400px;
 }
 
 .guyKicking{
-    position:absolute;
-    max-height: 300px;
-    align-self: center;
-    justify-self: center;
-    z-index: 1;
+    width: 100%;
 }
 
 .whyTKDcontent{
     width: 60%;
+    padding-left: 50px;
 }
 
 .whyTKDcontent li{
@@ -144,7 +139,7 @@ nav img{
 }
 
 .interested {
-    padding-top: 30px;
+    padding-top: 50px;
     width: 70%;
     margin: auto;
     text-align: center;
@@ -152,7 +147,7 @@ nav img{
 
 button {
     font-family: OSExtraBold;
-    font-size: 36px;
+    font-size: 24px;
     color: #2b2b2b;
 }
 
@@ -161,8 +156,8 @@ button {
     text-align: center;
     border: none;
     border-radius: 40px;
-    width: 280px;
-    height: 75px;
+    width: 150px;
+    height: 50px;
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     box-shadow: 0 5px 5px;
     box-shadow: 0 5px 20px;
@@ -213,7 +208,7 @@ button {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  }
+}
 
 .fa-facebook {
     background: #3B5998;
@@ -264,3 +259,103 @@ footer {
     margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .whatTKDcontent{
+        flex-direction: column;
+    }
+
+    .whatTKD {
+        text-align: center;
+    }
+
+    .whatTKDcontent p{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .whatTKDcontent img{
+        padding-top: 50px;
+        width: 40%;
+    }
+
+    .whyTKD{
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .whyTKDimage{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .whyTKDcontent{
+        width: 80%;
+        margin: auto;
+        padding-left: 0px;
+    }
+    
+    .whyTKDcontent ul{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        list-style-position: inside;
+    }
+    
+    .whyTKDcontent p, .whyTKDcontent h1{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .whatTKDcontent img{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    nav img{
+        display: none;
+    }
+
+    nav h1{
+        margin-left: 7px;
+        margin-right: 7px;
+        padding-bottom: 0px;
+    }
+
+    .backtotop p{
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .left, .right{
+        display: none;
+    }
+    
+    nav img{
+        display: inline-block;
+    }
+
+    #socials {
+        width: 48px;
+    }
+
+    .fa {
+        padding: 10px;
+    }
+}
