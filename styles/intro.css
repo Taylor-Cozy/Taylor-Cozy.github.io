@@ -1,0 +1,29 @@
+.nameContainer{
+    position: relative;
+    top: 50%;
+    width: 100% - 50px;
+    height: 50px;
+    display: flex;
+    margin: 25px;
+}
+
+.surname {
+    height: 100%;
+    stroke-linecap: round;
+    position: relative;
+    margin-left: 10px;
+}
+
+.surname path {
+    opacity: 0%
+}
+
+#name{
+    stroke-linecap: round;
+    position: relative;
+    height: 100%;
+}
+
+.projDiv {
+    opacity: 100;
+}

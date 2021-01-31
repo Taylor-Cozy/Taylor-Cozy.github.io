@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #ff2e2e52 0%, #00000000 100%);
+    border-style: solid;
+    border-color: white;
+    border-width: 20px;
+    background-color: #8904a3;
+}
+
+.border{
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+main {
+    height: 90%;
+    width: auto;
+    display: flex;
+}
+
+.links {
+    display: flex;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    flex-direction: column;
+}
+
+.links a{
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#GitHub{
+    color: white;
+}
+#LinkedIn{
+    color: white;
+}
+
+.linkNum{
+    font-size: 14px;
+}
+
+.projects{
+    /* display: none; */
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projDiv {
+    display: flex;
+    opacity: 0;
+    height: 100px;
+}
+
+.projects p{
+    font-family: monospace;
+    color: white;
+    margin: auto 10px 50px 10px;
+}
+
+path{
+    pointer-events: none;
+}
+
+.projects a{
+    position: relative;
+    height: 100%;
+    /* pointer-events: none; */
+}
+
+.disc{
+    height: 50%;
+}
+
+.tkd, .game, .uav{
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.infoBox{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    left: 0;
+    top: auto;
+    width: 100%;
+    padding: 25px 50px;
+    font-family: monospace;
+    height: 100%;
+    overflow:auto;
+}
+
+.infoBox h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+}
+
+.infoBox h2{
+    font-size: 24px;
+}
+
+.infoBox h3{
+    font-size: 18px;
+}
+
+.infoBox a{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.infoLinks {
+    display: flex;
+}
+
+.infoBox button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.infoDescription{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1500px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.infoImages{
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.projectTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.uavGrid{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* background-color: gray; */
+    grid-gap: .5em;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    justify-items: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.uavBox1{
+    grid-column: 3/6;
+    grid-row: 1/4;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.exp{
+    justify-self: right;
+    align-self:center;
+    text-align: right;
+}
+
+.uavBox1exp{
+    grid-column: 1/3;
+    justify-self: right;
+    align-self:center;
+    text-align: right;
+}
+
+.uavBox2{
+    grid-column: 6/9;
+}
+.uavBox2exp{
+    grid-column: 9/11;
+    justify-self: left;
+    align-self:center;
+    text-align: left;
+}
+
+.uavBox3{
+    grid-column: 6/8;
+    grid-row: 2/3;
+}
+.uavBox3exp{
+    grid-column: 8/10;
+    grid-row: 2/4;
+    justify-self: left;
+    align-self:center;
+    text-align: left;
+}
+
+.gridContainer img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.gameGrid{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* background-color: gray; */
+    grid-gap: .5em;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    justify-items: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.discGrid{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    /* background-color: gray; */
+    grid-gap: .5em;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    justify-items: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.discBox1{
+    justify-self: right;
+    grid-row: 1/3;
+}
