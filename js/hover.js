@@ -31,11 +31,11 @@ function hover(selector, rev){
 function colour(selector){
     switch(selector){
         case 'uavLink':
-            return '#13911e';
+            return '#217e28';
         case 'gameLink':
-            return '#cf1127';
+            return '#972633';
         case 'tkdLink':
-            return '#ffd000';
+            return '#0fa195';
         case 'discLink':
             return '#1e3c72';
     }

@@ -18,7 +18,8 @@ body{
     border-style: solid;
     border-color: white;
     border-width: 20px;
-    background-color: #8904a3;
+    background-color: #721d83;
+    overflow: hidden;
 }
 
 .border{
@@ -72,7 +73,41 @@ main {
     justify-content: space-between;
 }
 
-.projDiv {
+@media (max-width: 700px){
+    .projects{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .nameContainer{
+        margin: 5px;
+    }
+
+    .links {
+        right: 15px;
+        bottom: 15px;
+        flex-direction: row;
+    }
+
+    .linkNum{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    
+    .links a{
+        font-family: monospace;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    body{
+        border-width: 10px;
+    }
+    .border{
+        height: 10px;
+    }
+}
+
+.projDiv{
     display: flex;
     opacity: 0;
     height: 100px;
@@ -96,10 +131,12 @@ path{
 
 .disc{
     height: 50%;
+    max-width: 95%;
 }
 
 .tkd, .game, .uav{
     height: 100%;
+    max-width: 95%;
 }
 
 ::-webkit-scrollbar {
