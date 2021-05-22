@@ -129,7 +129,7 @@ path{
     /* pointer-events: none; */
 }
 
-.disc{
+.disc, .picross{
     height: 50%;
     max-width: 95%;
 }

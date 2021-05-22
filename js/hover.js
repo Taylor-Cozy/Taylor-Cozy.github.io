@@ -38,6 +38,8 @@ function colour(selector){
             return '#0fa195';
         case 'discLink':
             return '#1e3c72';
+        case 'picrossLink':
+            return '#000000';
     }
 }
     /* background-color: #1e3c72; */
