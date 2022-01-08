@@ -34,9 +34,9 @@ function colour(selector){
             return '#217e28';
         case 'gameLink':
             return '#972633';
-        case 'tkdLink':
+        case 'graphLink':
             return '#0fa195';
-        case 'discLink':
+        case 'physLink':
             return '#1e3c72';
         case 'picrossLink':
             return '#000000';
